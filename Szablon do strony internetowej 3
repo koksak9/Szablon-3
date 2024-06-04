@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2208e2acd0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: antiquewhite;
+    font-family: cursive;
+}
+
+.header-img
+{
+    background-image: url(cofe.jpg);
+    position: relative;
+    height: 350px;
+    background-position: 68% 70%;
+}
+
+h1
+{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header-text
+{
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%,-50%);
+    color: rgb(255, 236, 215);
+    text-transform: uppercase;
+    text-shadow: 3px 5px 3px black;
+    animation: text 3s ease forwards;
+}
+
+nav
+{
+    height: 50px;
+    background-color: rgb(202, 165, 116);
+    text-align: center;
+    line-height: 50px;
+}
+
+nav li
+{
+    display: inline-block;
+}
+
+nav li a    
+{
+    padding: 0 50px;
+    color: azure;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 16px;
+    transition: color .3s;
+}
+
+nav li a:hover
+{
+    color: wheat;
+}
+
+h3
+{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+main
+{
+    margin: 50px auto;
+    width: 70%;
+}
+
+.abt-us-heading
+{
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.col
+{
+    position: relative;
+    height: 300px;
+    margin: 40px;
+    background-attachment: fixed;
+    background-position: center;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.top
+{
+    background-image: url(cafee.jpg);
+}
+
+.middle
+{
+    background-image: url(work.jpg);
+}
+
+.bottom
+{
+    background-image: url(dog.jpg);
+}
+
+.abt-us-text
+{
+    position: absolute;
+    bottom: 0px;
+    padding: 20px 40px;
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-bottom-right-radius: 50px;
+    text-align: center;
+}
+
+footer
+{
+    height: 50px;
+    background-color: rgb(202, 165, 116);
+    text-align: center;
+    line-height: 50px;
+}
+
+i
+{
+    color: azure;
+    font-size: 25px;
+    text-shadow: 3px 2px 0 black;
+    padding-right: 10px;
+}
+
+.foot-ico
+{
+    padding-left: 25px;
+}
+
+@keyframes text
+{
+    0%
+    {
+        transform: translateY(-200px);
+        opacity: .3;
+    }
+
+    100%
+    {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+    </style>
+    <header>
+        <div class="header-img">
+            <div class="header-text">
+                <h1><font size="24px">Green Cafe Nero</font></h1>
+                <p>Desery, Kawiarnia, Miesce przyjazne dla wegeterian</p>
+            </div>
+            <div class="header-bg"></div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">usługi</a></li>
+            <li><a href="">cennik</a></li>
+            <li><a href="">kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>O nas</h1>
+        <section class="col top">
+            <div class="abt-us-text">
+                <h3>Doskonałe miejsce dla wielbicieli kawy</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusantium quas quibusdam at dolorum, maxime harum minus natus labore vero tempore consequuntur, soluta optio officiis praesentium. Harum eum eligendi eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nesciunt suscipit voluptatem fugit unde quisquam porro cumque commodi odit id, dicta aspernatur debitis iusto obcaecati iste animi est exercitationem dolorem.</p>
+            </div>
+            <div class="abt-us-bg"></div>
+        </section>
+        <section class="col middle">
+            <div class="abt-us-text">
+                <h3>miejsce doskonałe do pracy</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusantium quas quibusdam at dolorum, maxime harum minus natus labore vero tempore consequuntur, soluta optio officiis praesentium. Harum eum eligendi eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero qui accusantium in quos quia adipisci odit cumque. Eius odit temporibus at est, nobis quaerat sunt. Tenetur ratione dignissimos repellendus?</p>
+            </div>
+            <div class="abt-us-bg"></div>
+        </section>
+        <section class="col bottom">
+            <div class="abt-us-text">
+                <h3>zwierzęta mile widziane</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusantium quas quibusdam at dolorum, maxime harum minus natus labore vero tempore consequuntur, soluta optio officiis praesentium. Harum eum eligendi eveniet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quam voluptatibus odit obcaecati fugit nulla accusantium ipsum provident ad praesentium iusto fuga, ea velit porro est ut. Rerum, at exercitationem!</p>
+            </div>
+            <div class="abt-us-bg"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, magnam temporibus! Minima quia aperiam obcaecati.
+            <span span class="foot-ico">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </span>
+        </p>
+    </footer>
+</body>
+</html>
